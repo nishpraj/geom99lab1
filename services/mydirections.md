@@ -20,7 +20,7 @@ Read the Rubric to find out about what options exist to earn more marks. Here is
 
 ### Simple option:
 
-(returns map-preferred) Maps PlaceID search: https://www.google.com/maps/place/?q=place_id:ChIJFfiCrdo4Qm0RqPwuOAVtaj8
+(returns map-preferred) Maps PlaceID search: https://google.com/maps/place/?q=place_id:ChIJk4jbBYqWuEwRAzro8GMtxY8
 ### Efficient option
 
 (returns JSON) API PlaceID link https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJV2BQ4laeekgRFauLvdXbFXE&key=<INSERTKEY>
