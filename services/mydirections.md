@@ -23,7 +23,7 @@ Read the Rubric to find out about what options exist to earn more marks. Here is
 (returns map-preferred) Maps PlaceID search: https://google.com/maps/place/?q=place_id:ChIJk4jbBYqWuEwRAzro8GMtxY8
 ### Efficient option
 
-(returns JSON) API PlaceID link https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJV2BQ4laeekgRFauLvdXbFXE&key=<INSERTKEY>
+(returns JSON) API PlaceID link https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJmy7QzkN51YkRCN4Ff03qIbQ&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 
   which the JSON will have a CID that can be directly used as a URL like https://maps.google.com/?cid=4569584641105657000
 
