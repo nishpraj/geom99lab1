@@ -4,46 +4,53 @@
     <title>Trip To Dubai,UAE</title>
     <!-- CSS Starts, Styles the Entire HTML and MAP segments-->
     <style>
-      #map {
+      /* Sets the Map Height */
+      #map {                                   
         height: 70%;
       }
-
+      /* Defines the Height, Margin and Padding Parameters of HTML and BODY Section */
       html,     
       body {
         height: 100%;
         margin: 0;
         padding: 0;
       }
+      /*Styles the H1 Section of Html*/
       h1{
         text-align: center;
         color: rgb(122, 57, 57);
-        
       }
+      /*Styles the H2 Section of Html*/
       h2{
         text-align: center;
         color: rgb(122, 57, 57);
       }
+      /*Styles the H3 Section of Html*/
       h3{
         text-align: justify;
         margin-left: 10px;
         color: rgb(122, 57, 57);
       }
+      /*Styles the Paragraph Section of Html*/
       p{
         text-align: justify;
         margin-left: 10px;
         margin-right: 10px;
       }
+      /*Styles the H4 Section of Html*/
       h4{
         text-align: center;
         color: rgb(0, 0, 0);
         
       }
+      /*Styles the H5 Section of Html*/
       h5{
         text-align: right;
         color: rgb(0, 0, 0);
         margin-right: auto;
         
       }
+      /*Styles the Footer Section of Html*/
       #ftext{
           text-align: right;
           color:rgb(122, 57, 57);
@@ -51,23 +58,25 @@
         }
       
     </style>
+
     <!-- Java Script Starts to Get the Map and Design it-->
     <script>   
-      // Latitudes and Longitudes for Map to add markers
+    
+      // Latitudes and Longitudes of Places I visited to add markers in the Map
       function initMap() {
         const locations = [
-          { name: "Palm Jumeirah", lat: 25.112840, lng: 55.138487, description: "A man-made palm-shaped island featuring hotels, residences, and entertainment." },
+          { name: "Palm Jumeirah", lat: 25.112840, lng: 55.138487, description: "A Artificial palm-shaped island featuring hotels, residences, and entertainment." },
           { name: "Dubai Marina", lat: 25.080972, lng: 55.140384, description: "A canal city with a skyline of high-rise buildings and waterfront living." },
           { name: "Dubai Creek", lat: 25.240000, lng: 55.306250, description: "A historical area where Dubai originated, featuring traditional markets (souks)." },
           { name: "Jumeirah Beach", lat: 25.189221, lng: 55.217402, description: "A beautiful public beach with views of the Burj Al Arab." },
           { name: "Burj Khalifa", lat:25.1972, lng: 55.2744, description: "The tower has been an iconic landmark, not just in the emirates but also across the world." },
           { name: "Desert Safari Dubai", lat:25.1645, lng: 55.6272, description: "The BEst ever Desert Safari camp in Dubai" }, 
-          { name: "MotionGate Dubai", lat:24.921, lng: 55.0031, description: "Motiongate Dubai is a Hollywood-inspired theme park" }, 
+          { name: "MotionGate Dubai", lat:24.921, lng: 55.0031, description: "Motiongate Dubai - a Hollywood-inspired theme park" }, 
           { name: "Mall of the Emirates", lat: 25.118743, lng: 55.200671, description: "A shopping mall famous for Ski Dubai, an indoor ski resort." },
           { name: "Dubai Opera", lat: 25.2048, lng: 55.2760, description: "A stunning architectural masterpiece, hosting various cultural and entertainment events." },
           { name: "Dubai Frame", lat: 25.2336, lng: 55.2971, description: "A landmark building that frames the Old and New Dubai with panoramic views." },
           { name: "The World Islands", lat: 25.227829, lng: 55.165193, description: "A collection of artificial islands shaped like the world map." },
-          { name: "Dubai Expo City", lat: 24.9650, lng: 55.1512, description: "A collection of artificial islands shaped like the world map." }, 
+          { name: "Dubai Expo City", lat: 24.9650, lng: 55.1512, description: "Exhibition and Trade Centre in Dubai" }, 
         ];  
            //Gets the Map, Sets the Zoom Factor and Center aligns the Map to the Assigned Lat and Longs.
         const map = new google.maps.Map(document.getElementById("map"), {
@@ -94,7 +103,8 @@
       }
       
     </script>
-  </head>
+  
+</head>
   <body>
     <h1> Exploring Dubai's Marvels </h1>
     <h4>Here's The Glimps of Nishant's trip to Dubai</h4>
@@ -124,5 +134,5 @@
 
 
 <!--
-Reference- Source For Marker Design- https://developers.google.com/maps/documentation/javascript/examples/marker-symbol-custom 
+Reference- Source For Marker Design and Marker Placements - https://developers.google.com/maps/documentation/javascript/examples/marker-symbol-custom 
 -->
