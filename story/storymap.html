@@ -2,13 +2,13 @@
 <html>
   <head>
     <title>Trip To Dubai,UAE</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- CSS Starts, Styles the Entire HTML and MAP segments-->
     <style>
       #map {
         height: 70%;
       }
 
-      html,
+      html,     
       body {
         height: 100%;
         margin: 0;
@@ -51,7 +51,9 @@
         }
       
     </style>
-    <script>
+    <!-- Java Script Starts to Get the Map and Design it-->
+    <script>   
+      // Latitudes and Longitudes for Map to add markers
       function initMap() {
         const locations = [
           { name: "Palm Jumeirah", lat: 25.112840, lng: 55.138487, description: "A man-made palm-shaped island featuring hotels, residences, and entertainment." },
@@ -67,12 +69,12 @@
           { name: "The World Islands", lat: 25.227829, lng: 55.165193, description: "A collection of artificial islands shaped like the world map." },
           { name: "Dubai Expo City", lat: 24.9650, lng: 55.1512, description: "A collection of artificial islands shaped like the world map." }, 
         ];  
-
+           //Gets the Map, Sets the Zoom Factor and Center aligns the Map to the Assigned Lat and Longs.
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 11,
           center: { lat: 25.118743, lng: 55.200671 }, // Centered around Mall of the Emirates
         });
-
+            // Adds markers to the Assigned Locations above.
         locations.forEach((location) => {
           const marker = new google.maps.Marker({
             position: { lat: location.lat, lng: location.lng },
@@ -80,18 +82,17 @@
             map: map,
             title: location.name,
           });
-
+            // Assigns the information About the Location on a specific marker
           const infoWindow = new google.maps.InfoWindow({
             content: `<strong>${location.name}</strong><br>${location.description}`,
           });
-          
+            // Reveals the Information Of the Location assigned with Marker
           marker.addListener("click", () => {
             infoWindow.open(map, marker);
           });
         });
       }
-
-      window.initMap = initMap;
+      
     </script>
   </head>
   <body>
@@ -113,9 +114,15 @@
     <h3>The Jumeirah Beach </h3>
     <p>-Witnessed a breathtaking sunset at Jumeirah Beach, offering a stunning view of natural beauty against Dubai's impressive skyline.</p>
     <h3></h3>
+    <!-- Sets the API Key for the Map-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap&v=weekly" async></script>
   </body>
   <footer>
     <h5 id = "ftext"> ~Nishant Prajapati </h5>
   </footer>
 </html>
+
+
+<!--
+Reference- Source For Marker Design- https://developers.google.com/maps/documentation/javascript/examples/marker-symbol-custom 
+-->
